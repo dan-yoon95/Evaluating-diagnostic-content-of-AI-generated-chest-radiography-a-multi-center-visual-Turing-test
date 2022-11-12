@@ -1,16 +1,24 @@
 
-## StarGAN v2 - Official PyTorch Implementation
+## Evaluating diagnostic content of AI-generated chest radiography: a multi-center visual Turing test
 
 <p align="left"><img width="95%" src="assets/teaser.jpg" /></p>
 
-> **StarGAN v2: Diverse Image Synthesis for Multiple Domains**<br>
-> [Yunjey Choi](https://github.com/yunjey)\*, [Youngjung Uh](https://github.com/youngjung)\*, [Jaejun Yoo](http://jaejunyoo.blogspot.com/search/label/kr)\*, [Jung-Woo Ha](https://www.facebook.com/jungwoo.ha.921)<br>
-> In CVPR 2020. (* indicates equal contribution)<br>
+> **Evaluating diagnostic content of AI-generated chest radiography: a multi-center visual Turing test**<br>
+> [Youho Myong¶]\*, [Dan Yoon¶]\*, [Byeong Soo Kim]\*, [Young Gyun Kim]\*, [Yongsik Sim]\*, [Suji Lee]\*, [Jiyoung Yoon]\*, [Minwoo Cho*]\*, [Sungwan Kim*]<br>
+> PLoS ONE. (¶ indicates equal contribution)<br>
 
 > Paper: https://arxiv.org/abs/1912.01865<br>
 > Video: https://youtu.be/0EVh5Ki4dIY<br>
 
-> **Abstract:** *A good image-to-image translation model should learn a mapping between different visual domains while satisfying the following properties: 1) diversity of generated images and 2) scalability over multiple domains. Existing methods address either of the issues, having limited diversity or multiple models for all domains. We propose StarGAN v2, a single framework that tackles both and shows significantly improved results over the baselines. Experiments on CelebA-HQ and a new animal faces dataset (AFHQ) validate our superiority in terms of visual quality, diversity, and scalability. To better assess image-to-image translation models, we release AFHQ, high-quality animal faces with large inter- and intra-domain variations. The code, pre-trained models, and dataset are available at clovaai/stargan-v2.*
+> **Abstract:** *Background
+Accurate interpretation of chest radiographs requires years of medical training, and many countries face a shortage of medical professionals to meet such requirements. Recent advancements in artificial intelligence (AI) have aided diagnoses; however, their performance is often limited due to data imbalance. The aim of this study was to augment imbalanced medical data using generative adversarial networks (GANs) and evaluate the clinical quality of the generated images via a multi-center visual Turing test.
+Methods
+Using six chest radiograph datasets, (MIMIC, CheXPert, CXR8, JSRT, VBD, and OpenI), starGAN v2 generated chest radiographs with specific pathologies. Five board-certified radiologists from three university hospitals, each with at least five years of clinical experience, evaluated the image quality through a visual Turing test. Further evaluations were performed to investigate whether GAN augmentation enhanced the convolutional neural network (CNN) classifier performances. 
+Results
+In terms of identifying GAN images as artificial, there was no significant difference in the sensitivity between radiologists and random guessing (result of radiologists: 147/275 (53.5%) vs result of random guessing: 137.5/275, (50%); p=.284). GAN augmentation enhanced CNN classifier performance by 11.7%. 
+Conclusion
+Radiologists effectively classified chest pathologies with synthesized radiographs, suggesting that the images contained adequate clinical information. Furthermore, GAN augmentation enhanced CNN performance, providing a bypass to overcome data imbalance in medical AI training. CNN based methods rely on the amount and quality of training data; the present study showed that GAN augmentation could effectively augment training data for medical AI.
+*
 
 ## Teaser video
 Click the figure to watch the teaser video. <br/>
