@@ -4,26 +4,22 @@
 <p align="left"><img width="95%" src="assets/teaser.jpg" /></p>
 
 > **Evaluating diagnostic content of AI-generated chest radiography: a multi-center visual Turing test**<br>
-> [Youho Myong¶]\*, [Dan Yoon¶]\*, [Byeong Soo Kim]\*, [Young Gyun Kim]\*, [Yongsik Sim]\*, [Suji Lee]\*, [Jiyoung Yoon]\*, [Minwoo Cho*]\*, [Sungwan Kim*]<br>
+> [Youho Myong]\¶, [Dan Yoon]\¶, [Byeong Soo Kim]\, [Young Gyun Kim]\, [Yongsik Sim]\, [Suji Lee]\, [Jiyoung Yoon]\, [Minwoo Cho]\*, [Sungwan Kim]<br>
 > PLoS ONE. (¶ indicates equal contribution)<br>
 
 > Paper: https://arxiv.org/abs/1912.01865<br>
 > Video: https://youtu.be/0EVh5Ki4dIY<br>
 
-> **Abstract:** *Background
-Accurate interpretation of chest radiographs requires years of medical training, and many countries face a shortage of medical professionals to meet such requirements. Recent advancements in artificial intelligence (AI) have aided diagnoses; however, their performance is often limited due to data imbalance. The aim of this study was to augment imbalanced medical data using generative adversarial networks (GANs) and evaluate the clinical quality of the generated images via a multi-center visual Turing test.
-Methods
-Using six chest radiograph datasets, (MIMIC, CheXPert, CXR8, JSRT, VBD, and OpenI), starGAN v2 generated chest radiographs with specific pathologies. Five board-certified radiologists from three university hospitals, each with at least five years of clinical experience, evaluated the image quality through a visual Turing test. Further evaluations were performed to investigate whether GAN augmentation enhanced the convolutional neural network (CNN) classifier performances. 
-Results
-In terms of identifying GAN images as artificial, there was no significant difference in the sensitivity between radiologists and random guessing (result of radiologists: 147/275 (53.5%) vs result of random guessing: 137.5/275, (50%); p=.284). GAN augmentation enhanced CNN classifier performance by 11.7%. 
-Conclusion
+> **Abstract:** *[Background]
+Accurate interpretation of chest radiographs requires years of medical training, and many countries face a shortage of medical professionals to meet such requirements. Recent advancements in artificial intelligence (AI) have aided diagnoses; however, their performance is often limited due to data imbalance. The aim of this study was to augment imbalanced medical data using generative adversarial networks (GANs) and evaluate the clinical quality of the generated images via a multi-center visual Turing test./
+[Methods]
+Using six chest radiograph datasets, (MIMIC, CheXPert, CXR8, JSRT, VBD, and OpenI), starGAN v2 generated chest radiographs with specific pathologies. Five board-certified radiologists from three university hospitals, each with at least five years of clinical experience, evaluated the image quality through a visual Turing test. Further evaluations were performed to investigate whether GAN augmentation enhanced the convolutional neural network (CNN) classifier performances./
+[Results]
+In terms of identifying GAN images as artificial, there was no significant difference in the sensitivity between radiologists and random guessing (result of radiologists: 147/275 (53.5%) vs result of random guessing: 137.5/275, (50%); p=.284). GAN augmentation enhanced CNN classifier performance by 11.7%.\ 
+[Conclusion]
 Radiologists effectively classified chest pathologies with synthesized radiographs, suggesting that the images contained adequate clinical information. Furthermore, GAN augmentation enhanced CNN performance, providing a bypass to overcome data imbalance in medical AI training. CNN based methods rely on the amount and quality of training data; the present study showed that GAN augmentation could effectively augment training data for medical AI.
 *
 
-## Teaser video
-Click the figure to watch the teaser video. <br/>
-
-[![IMAGE ALT TEXT HERE](assets/youtube_video.jpg)](https://youtu.be/0EVh5Ki4dIY)
 
 ## TensorFlow implementation
 The TensorFlow implementation of StarGAN v2 by our team member junho can be found at [clovaai/stargan-v2-tensorflow](https://github.com/clovaai/stargan-v2-tensorflow).
