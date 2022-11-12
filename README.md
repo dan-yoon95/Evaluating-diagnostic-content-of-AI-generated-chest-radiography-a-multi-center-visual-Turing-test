@@ -8,7 +8,6 @@
 > PLoS ONE. (¶ indicates equal contribution)<br>
 
 > Paper: https://arxiv.org/abs/1912.01865<br>
-> Video: https://youtu.be/0EVh5Ki4dIY<br>
 
 > **Abstract:** *[Background]
 Accurate interpretation of chest radiographs requires years of medical training, and many countries face a shortage of medical professionals to meet such requirements. Recent advancements in artificial intelligence (AI) have aided diagnoses; however, their performance is often limited due to data imbalance. The aim of this study was to augment imbalanced medical data using generative adversarial networks (GANs) and evaluate the clinical quality of the generated images via a multi-center visual Turing test.
