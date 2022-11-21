@@ -18,7 +18,7 @@ session = tf.Session(config=config)
 tf.keras.backend.set_session(session)
 
 def resnet50_training(train_directory, validation_directory):
-    name = 'cxr_ResNet50_sgd_' + train_directory.split('/')[-1] +'_'
+    name = 'ResNet50_' + train_directory.split('/')[-1] +'_'
     model_path = name + '{val_loss:.4f}.h5'
     print('#####################################  '+name+'  ###############################################')
 
@@ -58,10 +58,10 @@ def resnet50_training(train_directory, validation_directory):
 
     print_weights = LambdaCallback(on_epoch_end=lambda epoch, logs: model.layers[3].get_weights())
     cb_checkpoint = ModelCheckpoint(filepath=model_path, monitor='val_loss', verbose=1, save_best_only=True)
-    early_stopping = EarlyStopping(patience=200 , mode='auto', monitor='val_loss')
+    early_stopping = EarlyStopping(patience=10 , mode='auto', monitor='val_loss')
     history = model.fit_generator(train_generator,
                                   steps_per_epoch=50,
-                                  epochs=300,
+                                  epochs=200,
                                   validation_data=val_generator,
                                   validation_steps=5,
                                   callbacks=[early_stopping, print_weights, cb_checkpoint])#, cb_checkpoint])
@@ -111,8 +111,8 @@ def resnet50_training(train_directory, validation_directory):
     model2.summary()
     """
 
-train_dir = 'G:/CXR8_data/cxr8_train'
-validation_dir = 'G:/CXR8_data/cxr8_val'
+train_dir = 'G:/gcf/train'
+validation_dir = 'G:/gcf/test'
 resnet50_training(train_dir, validation_dir)
 
 """
