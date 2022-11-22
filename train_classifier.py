@@ -1,4 +1,4 @@
-from keras.applications import ResNet50
+from keras.applications import ResNet50, InceptionV3, VGG16
 from keras.layers import Dense, Input, Activation
 from keras.models import Model
 from keras.callbacks import EarlyStopping, LambdaCallback, ModelCheckpoint
