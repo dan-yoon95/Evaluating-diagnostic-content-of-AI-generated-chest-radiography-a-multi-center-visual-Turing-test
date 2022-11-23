@@ -7,7 +7,7 @@
 > [Youho Myong]\¶, [Dan Yoon]\¶, [Byeong Soo Kim]\, [Young Gyun Kim]\, [Yongsik Sim]\, [Suji Lee]\, [Jiyoung Yoon]\, [Minwoo Cho]\*, and [Sungwan Kim]*<br>
 > PLoS ONE. (¶ indicates equal contribution)<br>
 
-> Paper: https://arxiv.org/abs/1912.01865<br>
+> Paper: ""
 
 > **Abstract:** *[Background]
 Accurate interpretation of chest radiographs requires years of medical training, and many countries face a shortage of medical professionals to meet such requirements. Recent advancements in artificial intelligence (AI) have aided diagnoses; however, their performance is often limited due to data imbalance. The aim of this study was to augment imbalanced medical data using generative adversarial networks (GANs) and evaluate the clinical quality of the generated images via a multi-center visual Turing test.
@@ -21,7 +21,7 @@ Radiologists effectively classified chest pathologies with synthesized radiograp
 
 
 ## TensorFlow implementation
-The TensorFlow implementation of StarGAN v2 by our team member junho can be found at [clovaai/stargan-v2-tensorflow](https://github.com/clovaai/stargan-v2-tensorflow).
+The TensorFlow implementation of StarGAN v2 can be found at [clovaai/stargan-v2-tensorflow](https://github.com/clovaai/stargan-v2-tensorflow).
 
 ## Software installation
 Clone this repository:
